@@ -57,7 +57,7 @@ class MessagesController < ApplicationController
     # Strong Parameter
     
     def set_message
-    params.rewuire(:message).permit(:content,:title)
+    params.require(:message).permit(:content,:title)
     end
     
     def message_params
